@@ -1,1 +1,1 @@
-https://kuzmak.github.io/rsschool-cv/cv
+https://kuzmakd.github.io/rsschool-cv/cv
