@@ -1,5 +1,5 @@
-##Dmitry Korzun
-###Junior Frontend Developer
+#Dmitry Korzun
+##Junior Frontend Developer
 
 
 ###Contacts
