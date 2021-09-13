@@ -50,3 +50,51 @@ _12/2008 - 01/2011_
 2. Also I have been developed and conducted 10 finance training seminars.
 
 
+###Education
+
+**2017-2019 Akademia Leona Kozminski (Warsaw, Poland), IPM Business School (Minsk)**
+Executive Master of Business Administration (EMBA)
+
+**2004 IPM Business School**
+Finance Director
+
+**1998-2003 Belarusion State University**
+Faculty of Applied Mathematics and Computer Science
+Mathematician - system programmer
+
+###Professional development, courses
+
+**08.2021 Hexlet**
+Frontend developer
+
+**07.2021 RS-school**
+JavaScript Development
+
+**05.2021 LeverX**
+Intro to IT
+
+**2020 ITmine**
+Business-analysis
+
+**2008 Intalev Academy of Management (Moscow)**
+Automation of Financial Management System
+
+###Skills
+* HTML5
+* CSS
+* JS
+* Git&Github
+* Finance management
+
+
+###Foreign languages
+**2019 - present https://skyeng.ru**
+* English (B2) Upper Intermediate 
+
+
+
+###Hobbies
+* Cycling
+* Travelling
+* Reading books
+
