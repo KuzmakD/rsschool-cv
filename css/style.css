@@ -1,0 +1,141 @@
+.page {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  color: black;
+}
+
+main {
+  display: grid; 
+  grid-template-columns: 1fr 1.5fr;
+  width: 940px;
+  min-width: 940px;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 36px;
+  padding-left: 60px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  background-color: #96A4BF;
+}
+.title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 36px;
+  background-color: #fffb00;
+}
+
+.title_work {
+  position: relative;
+  margin-left: -60px;
+  margin-bottom: 12px;
+  padding-left: 60px;
+  left: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #DFE4F0;
+}
+.title_work::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0;
+  padding-left: 0px;
+  margin-left: 0px;
+  width: 20px;
+  height: 30px;
+  background-color: #FFFED7;
+}
+
+/* aside */
+.aside {
+  color: black;
+  background-color: #ccffff;
+}
+
+.photo {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 540px;
+}
+
+/* Contacts, Education, Courses, Skills*/
+.contacts, .education, .courses, .skills {
+  padding: 20px 0px;
+  background-color: #ccffff;
+}
+
+/* Right Side */
+.right_side {
+  background-color: #ffffff;
+}
+h1 {
+  margin: 0px;
+  padding: 30px 60px 0px 60px;
+  font-size: 45px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.prof_title {
+  font-size: 30px;
+  padding:0 0 30px 60px;
+}
+
+/* About me */
+.about_me {
+  padding: 0;
+  margin-bottom: 30px;
+}
+.about_me_text {
+  margin: 0 60px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Works, Hobbies, Languages */ 
+.works, .hobbies, .languages {
+  margin-bottom: 60px;
+}
+.works_list, .hobbies_list, .languages_list {
+  margin-left: 60px;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  display: grid; 
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+  color: black;
+  background-color: #8EFFFF;     
+  width: 940px;
+  min-width: 940px;
+  margin: 0 auto;
+}
+.footer_git {
+  justify-self: center; 
+}
+.footer_rss {
+  justify-self: center;
+}
+.footer_rss_logo {
+  justify-self: center;
+  width: 80px;
+  height: 32px; 
+}
