@@ -10,14 +10,50 @@
 
 <body>
 
+   <header class="header">
+      <div class="container">
+         <nav>
+            <ul class="nav-list">
+               <li class="nav-list">
+                  <a href="#about_me" class="nav-link">About me</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#contacts" class="nav-link">Contacts</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#works" class="nav-link">Works</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#education" class="nav-link">Education</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#courses" class="nav-link">Courses</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#skills" class="nav-link">Skills</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#code" class="nav-link">Code</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#hobbies" class="nav-link">Hobbies</a>
+               </li>
+               <li class="nav-list">
+                  <a href="#languages" class="nav-link">Languages</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
    <main>
 
       <aside class="aside">
-         <figure class="photo">
-            <img src="img/DmitryKorzun_Photo.jpg" width="380" height="500" alt="DmitryKorzun_Photo">
+         <figure class="section_photo">
+            <img src="img/DmitryKorzun_Photo.jpg" class="photo" alt="DmitryKorzun_Photo">
          </figure>
 
-         <section class="contacts">
+         <section class="contacts" id="contacts">
             <h2 class="title">Contacts</h2>
             <ul>
                <li>
@@ -50,7 +86,7 @@
             </ul>
          </section>
 
-         <section class="education">
+         <section class="education" id="education">
             <h2 class="title">Education</h2>
             <ul>
                <li>
@@ -75,7 +111,7 @@
             </ul>
          </section>
 
-         <section class="courses">
+         <section class="courses" id="courses">
             <h2 class="title">Courses</h2>
             <ul>
                <li>
@@ -101,8 +137,7 @@
 
                <li>
                   <p>
-                     <b>2020 ITmine</b>
-                     <br>Business-analysis
+                     <b>2020 ITmine</b>                     <br>Business-analysis
                   </p>
                </li>
 
@@ -115,7 +150,7 @@
             </ul>
          </section>
 
-         <section class="skills">
+         <section class="skills" id="skills">
             <h2 class="title">Skills</h2>
             <ul>
                <li>
@@ -134,7 +169,15 @@
                   <p>Finance management</p>
                </li>
             </ul>
-            <br>
+         </section>
+
+         <section class="languages" id="languages">
+            <h2 class="title">Foreign languages</h2>
+            <div class="languages_text">
+               <b>English (B2) Upper Intermediate</b>
+               <br>
+               <a href="https://www.skyeng.ru">skyeng.ru</a> 2019 - present
+            </div>
          </section>
 
       </aside>
@@ -145,10 +188,10 @@
             <h2 class="prof_title">Junior Frontend Developer</h2>
          </header>
 
-         <section class="about_me">
+         <section class="about_me" id="about_me">
             <h2 class="title">About me</h2>
             <div class="about_me_text">
-               <div>
+               <p>
                   Hi!<br>
                   I am a strong financial professional who knows how to solve complex projects, achieve high results in
                   the company.<br>
@@ -156,11 +199,11 @@
                   I want to change my job to a developer.<br>
                   I believe, that my ability to learn and my experience of work with a lot of information, automation of
                   management processes in the company will allow me to successfully work as a Frontend Deveoper.
-                  </p>
-               </div>
+               </p>
+            </div>
          </section>
 
-         <section class="works">
+         <section class="works" id="works">
             <h2 class="title">Work Expirience</h2>
             <div class="works_list">
                <h3 class="title_work">Chief Finance Officer</h3>
@@ -189,25 +232,25 @@
                <b>ZDES@SEICHAS Consulting Group, <a href=" https://www.zis.by">zis.by</a></b>
                <br><i>12/2008 - 01/2011</i>
                <br><b>My achievements:</b>
-               <ol>
-                  <li>
+               <ol class="zis_work">
+                  <li class="zis_work">
                      <div>I have been implemented 7 (seven) consulting projects:</div>
-                  </li>
-                  <ul>
-                     <li>
-                        <div>Implementation of management accounting and reporting system (companies: Jelentorg, Texx)
-                        </div>
-                     </li>
-                     <li>
-                        <div>Development and automation of the management and financial accounting system in the program
+                     <ul class="zis_work">
+                        <li>
+                           <div>Implementation of management accounting and reporting system (companies: Jelentorg, Texx)
+                           </div>
+                        </li>
+                        <li>
+                           <div>Development and automation of the management and financial accounting system in the program
                            Intalev (company Cosmos TV)</div>
-                     </li>
-                     <li>Implementation of the financial accounting and reporting system (company Fidmash)</li>
-                     <li>Audit of the financial system (company Galant)</li>
-                     <li>Implementation of the budget management system (company Alfamed)</li>
-                     <li>Development and automation of management accounting system based on 1S 8.2 Sinkevich (company
+                        </li>
+                        <li>Implementation of the financial accounting and reporting system (company Fidmash)</li>
+                        <li>Audit of the financial system (company Galant)</li>
+                        <li>Implementation of the budget management system (company Alfamed)</li>
+                        <li>Development and automation of management accounting system based on 1S 8.2 Sinkevich (company
                         Varia-service)</li>
-                  </ul>
+                     </ul>
+                  </li>
                   <li>
                      <p>Also I have been developed and conducted 10 finance training seminars.</p>
                   </li>
@@ -215,7 +258,20 @@
             </div>
          </section>
 
-         <section class="hobbies">
+         <section class="code" id="code">
+            <h2 class="title">Code example</h2>
+            <div class="code_task">
+               Task is to create a function deepCount that returns the number of ALL elements within an array, including any within inner-level arrays.<br>
+            </div>
+            <div class="code_text">
+               function deepCount(a) {<br>
+                  &nbsp; &nbsp; if (a.length === 0) { return 0; };<br>
+                  &nbsp; &nbsp; return Array.isArray(a) ? a.length + Math.max(...a.map &lt; &nbsp; (deepCount)) : 0;<br>
+               }
+            </div>
+         </section>
+
+         <section class="hobbies" id="hobbies">
             <h2 class="title">Hobbies</h2>
             <ul class="hobbies_list">
                <li>
@@ -230,21 +286,14 @@
             </ul>
          </section>
 
-         <section class="languages">
-            <h2 class="title">Foreign languages</h2>
-            <div class="languages_list">
-               <b><a href="https://www.skyeng.ru">skyeng.ru</a> 2019 - present </b>
-               <br>English (B2) Upper Intermediate
-            </div>
-         </section>
       </section>
 
    </main>
 
-   <footer class="footer">
-      <a class="footer_git" href="https://github.com/KuzmakD/rsschool-cv">My Github</a>
-      <a class="footer_rss" href="https://rs.school/js/">Курс «JavaScript/Front-end» 2021</a>
-      <a class="footer_rss_logo" href="https://rs.school/js/">
+   <footer class="container">
+      <a class="footer_git" href="https://github.com/KuzmakD/rsschool-cv">KuzmakD</a>
+      <div class="footer_rss">2022</div>
+      <a class="footer_rss_logo" href="https://rs.school/js-stage0/">
          <img src="img/rss-logo.svg" width="80" height="30" alt="RS School">
       </a>
    </footer>
