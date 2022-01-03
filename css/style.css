@@ -1,3 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(0, 0, 102)
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+/* HEADER */
+.header {
+  background: #96A4BF;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 50px;
+  color: rgb(0, 0, 102);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  width: calc(100% - 24px);
+  height: 2px;
+  background-color: blue;
+  opacity: 0;
+  transition: .5s;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 24px;);
+  }
+}
+
 .page {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -6,11 +85,12 @@
   color: black;
 }
 
+/* main*/
 main {
   display: grid; 
   grid-template-columns: 1fr 1.5fr;
-  width: 940px;
-  min-width: 940px;
+  width: 100%;
+  min-width: 320px;
   height: 100%;
   min-height: 100%;
   margin: 0 auto;
@@ -19,13 +99,15 @@ main {
 
 .title {
   position: relative;
-  margin: 0;
-  margin-bottom: 36px;
+  margin: 0 0 18px;
   padding-left: 60px;
   font-size: 24px;
   line-height: 36px;
   font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   background-color: #96A4BF;
+  color: rgb(0, 0, 102)
 }
 .title::before {
   position: absolute;
@@ -59,36 +141,53 @@ main {
   background-color: #FFFED7;
 }
 
-/* aside */
+
+/* Left aside */
 .aside {
   color: black;
   background-color: #ccffff;
 }
 
-.photo {
+.section_photo {
   display: block;
   margin: 0;
   padding: 0;
-  height: 540px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5%;
 }
 
 /* Contacts, Education, Courses, Skills*/
-.contacts, .education, .courses, .skills {
+.contacts, .education, .courses, .skills, .languages {
   padding: 20px 0px;
   background-color: #ccffff;
+}
+
+.languages_text {
+  padding-left: 40px;
 }
 
 /* Right Side */
 .right_side {
   background-color: #ffffff;
 }
+
 h1 {
   margin: 0px;
-  padding: 30px 60px 0px 60px;
+  padding: 60px 60px 0px;
+  text-transform: capitalize;
   font-size: 45px;
   line-height: 40px;
   font-weight: 700;
 }
+
 .prof_title {
   font-size: 30px;
   padding:0 0 30px 60px;
@@ -102,30 +201,42 @@ h1 {
 .about_me_text {
   margin: 0 60px;
   padding: 0;
-  font-size: 16px;
   line-height: 24px;
 }
 
-/* Works, Hobbies, Languages */ 
-.works, .hobbies, .languages {
-  margin-bottom: 60px;
+/* Works, Hobbies, Code */ 
+.works, .code, .hobbies {
+  margin-bottom: 30px;
 }
-.works_list, .hobbies_list, .languages_list {
+.works_list, .hobbies_list, .code_task {
   margin-left: 60px;
   padding: 0;
   line-height: 1.5;
 }
 
+.zis_work {
+  padding-left: 20px;
+}
+
+.code_text {
+  font-style: italic;
+  margin: 0;
+  padding: 10px 0 10px 60px;
+  background-clip: border-box;
+  background: black;
+  color: white;
+}
+
 /* Footer */
-.footer {
+footer {
   display: grid; 
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0px;
+  padding: 20px;
   color: black;
-  background-color: #8EFFFF;     
-  width: 940px;
-  min-width: 940px;
+  background-color: #96A4BF;     
+  width: 100%;
+  min-width: 320px;
   margin: 0 auto;
 }
 .footer_git {
